@@ -85,6 +85,7 @@ export default {
 
   #header-top {
     background-color: #484848;
+    height: 50px;
     padding: 15px 0;
     position: sticky;
     left: 0;
@@ -105,6 +106,7 @@ export default {
 
   #header-bottom {
     background-color: #48484878;
+    height: 110px;
     padding: 30px 0;
 
     #row-header-bottom {
@@ -151,9 +153,7 @@ export default {
       }
 
       .btn {
-        border-radius: 30px;
-        padding: 12px 30px;
-        cursor: pointer;
+        @include button-standard
       }
 
       .btn-green {

@@ -3,4 +3,11 @@
     margin: 0 auto;
 }
 
+@mixin button-standard {
+    border-radius: 30px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
 $greenMain:#79b27b;
+$greyMain: #3f4843;
