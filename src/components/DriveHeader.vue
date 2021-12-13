@@ -111,6 +111,14 @@ export default {
       align-items: flex-end;
       color: white;
 
+      .logo-container {
+        cursor: pointer;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
       nav {
         min-width: 55%;
         ul {
