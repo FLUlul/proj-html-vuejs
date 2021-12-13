@@ -75,10 +75,8 @@ export default {
 @import '@/assets/scss/variables.scss';
 
   header {
-    position: sticky;
-    left: 0;
-    top: 0;
-    right: 0;
+    position: relative;
+    z-index: 5;
   }
 
   .container {
@@ -88,6 +86,10 @@ export default {
   #header-top {
     background-color: #484848;
     padding: 15px 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
 
     #row-header-top {
       display: flex;
