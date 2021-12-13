@@ -1,37 +1,65 @@
 <template>
   <div id="app">
 
-    <Header/>
+    <DriveHeader/>
 
-    <Main/>
+    <DriveMain/>
 
-    <Footer/>
+    <DriveFooter/>
 
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import DriveHeader from './components/DriveHeader.vue'
+import DriveMain from './components/DriveMain.vue'
+import DriveFooter from './components/DriveFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Main,
-    Footer
+    DriveHeader,
+    DriveMain,
+    DriveFooter
+  },
+
+  data() {
+    return {
+      headerData: [
+        {
+          "name": "HOME",
+        },
+        {
+          "name": "ABOUT",
+        },
+        {
+          "name": "PRICES",
+        },
+        {
+          "name": "COURSES",
+        },
+        {
+          "name": "LOCATIONS",
+        },
+        {
+          "name": "BLOG",
+        }        
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
