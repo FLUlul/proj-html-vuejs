@@ -34,6 +34,22 @@
 
           </div>
 
+          <nav>
+
+            <ul>
+
+              <li v-for="navName in navData" :key="navName">
+                {{navName.name}}
+              </li>
+
+            </ul>
+
+          </nav>
+
+          <div class="btn btn-green">
+            BOOK NOW
+          </div>
+
         </div>
 
       </div>
@@ -46,19 +62,23 @@
 <script>
 export default {
   name: 'DriveHeader',
+  
+  props: {
+    navData: Array
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
   @mixin page-center {
     width: 60%;
     margin: 0 auto;
   }
+  $greenMain:#79b27b;
 
   header {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     right: 0;
@@ -86,6 +106,52 @@ export default {
 
   #header-bottom {
     background-color: #48484878;
-    padding: 25px 0;
+    padding: 30px 0;
+
+    #row-header-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: white;
+
+      nav {
+        min-width: 55%;
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          
+          /* to delete after vue active logic set up */
+          /* debug */
+          li:nth-child(1) {
+            color: $greenMain;
+            border-bottom: 3px solid $greenMain;
+            padding-bottom: 4px;
+          }
+
+          li {
+            cursor: pointer;
+            padding-bottom: 7px;
+
+            &.active {
+              color: $greenMain;
+              border-bottom: 3px solid $greenMain;
+              padding-bottom: 4px;
+            }
+          }
+        }
+      }
+
+      .btn {
+        border-radius: 30px;
+        padding: 12px 30px;
+        cursor: pointer;
+      }
+
+      .btn-green {
+        background-color: $greenMain;
+      }
+
+    }
   }
 </style>

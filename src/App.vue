@@ -1,7 +1,9 @@
 <template>
   <div id="app">
 
-    <DriveHeader/>
+    <DriveHeader
+    :navData="headerData"
+    />
 
     <DriveMain/>
 
