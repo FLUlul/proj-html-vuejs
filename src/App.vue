@@ -30,21 +30,33 @@ export default {
       headerData: [
         {
           "name": "HOME",
+          "active": true,
+          "new": false
         },
         {
           "name": "ABOUT",
+          "active": false,
+          "new": false
         },
         {
           "name": "PRICES",
+          "active": false,
+          "new": false
         },
         {
           "name": "COURSES",
+          "active": false,
+          "new": true
         },
         {
           "name": "LOCATIONS",
+          "active": false,
+          "new": false
         },
         {
           "name": "BLOG",
+          "active": false,
+          "new": false
         }        
       ]
     }
