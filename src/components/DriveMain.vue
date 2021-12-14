@@ -74,6 +74,34 @@
       </div>
 
     </section>
+
+    <section id="call-us">
+      
+      <div class="container">
+
+        <div class="row-call-us">
+
+          <div class="call-us-lx">
+
+            <h2>Start Learning to Drive Today</h2>
+
+            <div>Give us a call to schedule your first driving lesson</div>
+
+          </div>
+
+          <div class="call-us-rx">
+
+            <i class="fas fa-phone"></i>
+
+            <span>1-800-555-555</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
   </main>
 </template>
 
@@ -91,18 +119,18 @@ export default {
   }
 
   #jumbo-top {
+    height: 700px;
+    color: white;
     display: flex;
     align-items: center;
-    height: 700px;
-    background-image: url("../assets/images/homepage-hero-background.jpg");
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
+    background-image: url("../assets/images/homepage-hero-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     h1 {
       font-size: 4rem;
@@ -154,7 +182,7 @@ export default {
           border-radius: 20px;
           position: absolute;
           background-color: #ffff;
-          top: -120px;
+          top: -100px;
 
           .title{
             
@@ -203,5 +231,39 @@ export default {
       }
     }
   }
-  
+
+  #call-us {
+    background-image: url("../assets/images/horizontal-cta-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    color: white;
+
+    .row-call-us{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .call-us-lx {
+        h2 {
+        font-size: 2.5rem;
+        }
+
+        div {
+          font-size: 1.2rem;
+        }
+      }
+
+      .call-us-rx {
+        font-size: 2rem;
+        i {
+          margin-right: 50px;
+        }
+      }
+
+    }
+
+  }
+
 </style>
