@@ -265,6 +265,7 @@
             <div class="text-container">
 
               <h3>Mike Hart</h3>
+              <div class="hover-name">instructor - mike hart</div>
 
               <div class="socials">
 
@@ -291,6 +292,7 @@
             <div class="text-container">
 
               <h3>John Smith</h3>
+              <div class="hover-name">instructor - john smith</div>
 
               <div class="socials">
 
@@ -317,6 +319,7 @@
             <div class="text-container">
 
               <h3>Angela Hart</h3>
+              <div class="hover-name">instructor - angela hart</div>
 
               <div class="socials">
 
@@ -477,7 +480,7 @@ export default {
     &:hover {
       background-color: #7f9ea8;
       color: white;
-      border: solid 3px #486c79;
+      border: solid 3px $greyMain;
     }
   }
   .tab {
@@ -874,6 +877,11 @@ export default {
         padding: 50px 25px;
         margin-bottom: 10px;
         transform: translateY(70px);
+        position: relative;
+
+        &:hover .text-container .hover-name {
+          visibility: visible;
+        }
 
         .img-container {
           width: 100%;
@@ -888,6 +896,21 @@ export default {
           h3 {
             font-size: 1.5rem;
             color: #4d5350;
+          }
+
+          .hover-name {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgba(0, 0, 0, 0.787);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            bottom: 200px;
+            right: 30px;
+            z-index: 1;
+            font-size: .7rem;
           }
 
           .socials i{
@@ -945,6 +968,7 @@ export default {
     .dots i{
       font-size: .7rem;
       margin: 0 5px;
+      cursor: pointer;
     }
   }
   #latest-news {

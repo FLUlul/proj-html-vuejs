@@ -123,15 +123,6 @@ export default {
     background-position: center;
     color: rgb(175, 175, 175);
     padding: 50px 0;
-
-    .logo-info{
-      p {
-        line-height: 30px;
-      }
-      img {
-        max-width: 100%;
-      }
-    }
     
     .container {
       display: flex;
@@ -150,6 +141,14 @@ export default {
           font-weight: 600;
         }
       }
+      .logo-info{
+        p {
+          line-height: 30px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
 
       .contacts-footer {
         i {
@@ -160,6 +159,9 @@ export default {
       .courses-footer {
         ul {
           color: $greenMain;
+          li {
+            cursor: pointer;
+          }
           i {
             margin: 5px 5px;
           }
@@ -181,7 +183,7 @@ export default {
 
   .row-footer-bottom {
     background-color: #1c1d1e;
-    color: $greyMain;
+    color: grey;
     padding: 50px 0;
 
     .container {
@@ -192,6 +194,7 @@ export default {
         font-size: .8rem;
         span {
           color: $greenMain;
+          cursor: pointer;
         }
       }
 
@@ -199,6 +202,7 @@ export default {
         i {
           color: white;
           margin: 0 10px;
+          cursor: pointer;
         }
       }
     }
