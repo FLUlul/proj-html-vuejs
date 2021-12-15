@@ -90,6 +90,12 @@ export default {
     background-color: $greenMain;
     color: white;
     display: inline-block;
+
+    &:hover {
+      background-color: white;
+      color: $greenMain;
+      border: solid 3px $greenMain;
+    }
   }
 
   .row-footer-top {

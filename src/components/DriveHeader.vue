@@ -158,6 +158,12 @@ export default {
 
       .btn-green {
         background-color: $greenMain;
+
+      &:hover {
+      background-color: white;
+      color: $greenMain;
+      border: solid 3px $greenMain;
+    }
       }
 
     }

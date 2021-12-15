@@ -464,11 +464,21 @@ export default {
   .btn-green {
     color: white;
     background-color: $greenMain;
+    &:hover {
+      background-color: white;
+      color: $greenMain;
+      border: solid 3px $greenMain;
+    }
   }
   .btn-white {
     color: #7f9ea8;
     border: solid #7f9ea8 3px;
     background-color: #e7ebee;
+    &:hover {
+      background-color: #7f9ea8;
+      color: white;
+      border: solid 3px #486c79;
+    }
   }
   .tab {
     border-radius: 10px;
