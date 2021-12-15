@@ -63,6 +63,25 @@
       </div>
 
     </div>
+
+    <div class="row-footer-bottom">
+
+      <div class="container">
+
+        <div id="copyright">&#169; Copyright 2012 - 2020 | Avada Theme by <span>FLU</span> | All Right Reserved | Powered by <span>VueCLI</span></div>
+
+        <div class="socials">
+
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+
+        </div>
+
+      </div>
+
+    </div>
   </footer>
 </template>
 
@@ -155,6 +174,31 @@ export default {
           img {
             max-width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  .row-footer-bottom {
+    background-color: #1c1d1e;
+    color: $greyMain;
+    padding: 50px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      #copyright {
+        font-size: .8rem;
+        span {
+          color: $greenMain;
+        }
+      }
+
+      .socials {
+        i {
+          color: white;
+          margin: 0 10px;
         }
       }
     }
