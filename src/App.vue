@@ -7,7 +7,10 @@
 
     <DriveMain/>
 
-    <DriveFooter/>
+    <DriveFooter
+    :navContacts="footerContactsData"
+    :navCourses="footerCoursesData"
+    />
 
   </div>
 </template>
@@ -58,6 +61,42 @@ export default {
           "active": false,
           "new": false
         }        
+      ],
+      footerContactsData: [
+        {
+          "contact": "12345 North Main Street, New York, NY 555555",
+          "logo": "fas fa-home"
+        },
+        {
+          "contact": "1.800.555.6789",
+          "logo": "fas fa-phone"
+        }, 
+        {
+          "contact": "info@your-domain.com",
+          "logo": "far fa-envelope"
+        }, 
+        {
+          "contact": "Theme-Fusion.com",
+          "logo": "fas fa-link"
+        }       
+      ],
+      footerCoursesData: [
+        {
+          "course": "Pass Plus",
+          "logo": "far fa-arrow-alt-circle-right"
+        },
+        {
+          "course": "Intensive Course",
+          "logo": "far fa-arrow-alt-circle-right"
+        },
+        {
+          "course": "Automatic",
+          "logo": "far fa-arrow-alt-circle-right"
+        },
+        {
+          "course": "Instructor Training",
+          "logo": "far fa-arrow-alt-circle-right"
+        },
       ]
     }
   }

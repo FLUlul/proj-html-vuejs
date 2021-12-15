@@ -1,7 +1,7 @@
 <template>
   <header>
     
-    <div id="header-top">
+    <section id="header-top">
 
       <div class="container">
 
@@ -20,9 +20,9 @@
 
       </div>
 
-    </div>
+    </section>
 
-    <div id="header-bottom">
+    <section id="header-bottom">
 
       <div class="container">
 
@@ -55,7 +55,7 @@
 
       </div>
 
-    </div>
+    </section>
 
   </header>
 </template>
